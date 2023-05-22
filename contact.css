@@ -1,0 +1,22 @@
+.contactbox {
+        text-align: left;
+        padding-top: 30px;
+        padding-left: 60px;
+}
+
+
+.ebox{
+        padding-top: 13px;
+        padding-left: 20px;
+        margin-left:10%;
+        border: 1px solid black; 
+        width: 80%;
+        height: 40px;
+        font-size: 20px;
+}
+
+
+.cnum{
+    margin-top: 10%;
+
+}

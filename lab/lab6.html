@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Number Generator</title>
+    
+</head>
+<body>
+	<h1>Random Number Generator</h1>
+	<button id="generateBtn">Generate</button>
+	<button id="stopBtn">Stop</button>
+	<table id="numberTable">
+		<thead>
+			<tr>
+				<th>Random Number</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+
+	<script>
+		// Get references to the buttons and table
+		const generateBtn = document.getElementById('generateBtn');
+		const stopBtn = document.getElementById('stopBtn');
+		const numberTable = document.getElementById('numberTable').getElementsByTagName('tbody')[0];
+
+		// Variables to keep track of the interval and the last row number
+		let interval;
+		let lastRow = 0;
+
+		// Event listener for the generate button
+		generateBtn.addEventListener('click', function() {
+			// Start the interval to generate random numbers every second
+			interval = setInterval(function() {
+				// Generate a random number between 1 and 100
+				const randomNumber = Math.floor(Math.random() * 100) + 1;
+
+				// Add the random number to a new row in the table
+				const newRow = numberTable.insertRow(-1);
+				const newCell = newRow.insertCell(0);
+				newCell.innerHTML = randomNumber;
+				lastRow++;
+			}, 1000);
+		});
+
+		// Event listener for the stop button
+		stopBtn.addEventListener('click', function() {
+			// Clear the interval and reset the last row number
+			clearInterval(interval);
+			lastRow = 0;
+		});
+	</script>
+</body>
+</html>

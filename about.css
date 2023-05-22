@@ -1,0 +1,9 @@
+.aboutbox{
+    border: 2px solid black;
+    margin: 25px 25px 25px 25px;
+    height: 90%;
+    text-align: center;
+    font-size: large;
+    padding-top: 200px;
+    box-sizing: border-box;
+}

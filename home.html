@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Login</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+	<script src="exjs.js">
+    </script>
+</head>
+<body>
+
+	<div class="navbar">
+		<a href="#" class="active">Home</a>
+		<a href="/aboutus.html">About Us</a>
+		<a href="/contact.html">Contact</a>
+		
+	</div>
+
+    <div class="container">
+		<div class="box box1 box-center">
+			<div class="formcontainer">
+                 <form id="login-form" onsubmit="return validateForm() " method="post" action="sign.php"> 
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" id="username" required>
+					<span class="error" id="usernameError"></span>
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" id="password" required >
+        
+                    <span class="error" id="passwordError"></span>
+                    <button type="submit" id="login-button" class="cancelbtn" value="Login">Sign Up</button>
+					<span class="msg"> Already have a account,  <a href="login.html">login here</a>
+						</span>
+                </form> 
+				
+            </div>
+		</div>
+		<div class="box box2 parent">
+			<div class="top">
+				<img src="cbottom.jpg" alt="Ad here">
+			</div>
+			<div class="bottom">
+				<img src="cbottom.jpg" alt="Ad here">
+				
+		</div>
+	</div>
+	<footer>
+		<p>&copy; Boxing club 2023</p>
+	</footer>
+	  
+</body>
+</html>
